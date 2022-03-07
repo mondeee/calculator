@@ -42,8 +42,6 @@ export default function App() {
       setCurrentInput(str)
       return
     }
-    // setOperation(null)
-    // if (!currentInput) return setCurrentInput(str)
     if (currentInput) {
       setCurrentInput(currentInput + str)
     } else {
@@ -93,6 +91,7 @@ export default function App() {
 
     if (operation == "-") {
       calc = prevInt - currInt
+      if (calc < 0) calc = 0 //ABSOLUTE VALUE TO 0 
       settotalVal(calc)
       setPrev(calc)
     }
