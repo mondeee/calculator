@@ -182,7 +182,6 @@ export default function App() {
 
   return (
     <View style={styles.container}>
-      {/* <Text style={{ fontSize: 32, width: '68%', color: 'gray' }}>{prev}</Text> */}
       <Text style={{
         fontSize: 32,
         width: '68%',
